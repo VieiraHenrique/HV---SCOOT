@@ -26,7 +26,7 @@ body::-webkit-scrollbar-track {
     background: #dbdbdb; /* color of the tracking area */
 }
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(136, 136, 136); /* color of the scroll thumb */
+    background-color: $yellow; /* color of the scroll thumb */
     border-radius: 100px; /* roundness of the scroll thumb */
     /* border: 3px solid orange; */ /* creates padding around scroll thumb */
 }

@@ -681,7 +681,7 @@ body::-webkit-scrollbar-track {
   /* color of the tracking area */ }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #888888;
+  background-color: #fcb72b;
   /* color of the scroll thumb */
   border-radius: 100px;
   /* roundness of the scroll thumb */
@@ -948,6 +948,9 @@ button {
     display: flex;
     align-items: center;
     flex-direction: column; }
+    @media screen and (min-width: 1280px) {
+      .footer .wrapper {
+        flex-direction: row; } }
   .footer__nav ul {
     display: flex;
     margin-top: 40px; }
