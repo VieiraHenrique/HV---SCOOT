@@ -1,0 +1,52 @@
+.signup {
+    background-color: $blue;
+    color: $white;
+    @include container;
+    position: relative;
+
+    &::after {
+        @include pseudo;
+        background-image: url("https://vieirahenrique.github.io/HV---SCOOT/img/three-dots.svg");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 1250px;
+        background-position: top 180px right -250px;
+        opacity: 0.2;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 50px;
+        @include ipad {
+            flex-direction: row;
+        }
+    }
+
+    .title-main {
+        width: 520px;
+        max-width: 100%;
+        text-align: center;
+        @include ipad {
+            text-align: left;
+            max-width: 65%;
+        }
+    }
+
+    &-appstores {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include ipad {
+            flex-direction: column;
+        }
+
+        @include laptop13 {
+            flex-direction: row;
+        }
+    }
+}

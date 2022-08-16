@@ -39,7 +39,7 @@
             @include pseudo;
             width: 450px;
             height: 140px;
-            background-image: url("../../img/arrow-yellow-to-right.svg");
+            background-image: url("https://vieirahenrique.github.io/HV---SCOOT/img/arrow-yellow-to-right.svg");
         }
     }
 
@@ -64,7 +64,7 @@
                 right: calc(-100% - 50px);
             }
             &::after {
-                background-image: url("../../img/arrow-yellow-to-left.svg");
+                background-image: url("https://vieirahenrique.github.io/HV---SCOOT/img/arrow-yellow-to-left.svg");
             }
         }
     }

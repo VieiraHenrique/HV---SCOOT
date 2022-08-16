@@ -7,6 +7,7 @@
     right: 0;
     height: 96px;
     @include container;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 
     .wrapper {
         display: flex;
@@ -25,7 +26,7 @@
         width: 20px;
         height: 20px;
         @include reset-background;
-        background-image: url("../../../img/hamburger.png");
+        background-image: url("https://vieirahenrique.github.io/HV---SCOOT/img/hamburger.png");
         background-size: contain;
         @include ipad {
             display: none;
@@ -105,7 +106,7 @@
 
     &.opened {
         .hamburger {
-            background-image: url("../../../img/close.svg");
+            background-image: url("https://vieirahenrique.github.io/HV---SCOOT/img/close.svg");
         }
         .main-nav {
             left: 0;

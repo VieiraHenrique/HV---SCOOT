@@ -1,0 +1,41 @@
+.footer {
+    background-color: $blue-dark;
+    @include container;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__nav {
+        ul {
+            display: flex;
+            margin-top: 40px;
+            li {
+                @include gap-horizontal(30px);
+            }
+            @include ipad {
+                margin-top: 0;
+                margin-left: 40px;
+            }
+        }
+        a {
+            color: $grey;
+        }
+    }
+
+    &__social {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include ipad {
+            margin-top: 0;
+            margin-left: auto;
+        }
+
+        img {
+            max-width: 25px;
+        }
+    }
+}
