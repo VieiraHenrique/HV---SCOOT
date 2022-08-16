@@ -1,0 +1,35 @@
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400;600;800&family=Space+Mono:wght@400;700&display=swap");
+
+$font-primary: "Space Mono", sans-serif;
+$font-secondary: "Lexend Deca", sans-serif;
+
+/* COLORS */
+
+$white: #fff;
+$black: #000;
+$grey: #939caa;
+$grey-light: #e5ecf4;
+$grey-light-extra: #f2f5f9;
+
+$yellow: #fcb72b;
+$yellow-light: #fff4df;
+$blue: #495567;
+$blue-dark: #333A44;
+$blue-saturate: #10274d;
+
+// BREAKPOINTS
+
+$ipad: 768px;
+$ipadPro: 1024px;
+$laptop13: 1280px;
+$laptop: 1440px;
+$pc: 1920px;
+$bigPc: 2560px;
+
+/* SHADOWS */
+
+$shadow-light: -2px 2px 10px rgba(#000, 0.07);
+$shadow-medium: 0px 7px 20px rgba(#000, 0.2);
+$shadow-dark: 0px 20px 40px rgba(#000, 0.3);

@@ -1,0 +1,53 @@
+.title-main {
+    font-family: $font-primary;
+    font-weight: bold;
+    font-size: 4.5rem;
+    @include laptop13 {
+        font-size: 5.6rem;
+    }
+}
+
+.title-secondary {
+    font-family: $font-primary;
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+.title-small {
+    font-family: $font-primary;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.title-small-extra {
+    font-family: $font-primary;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.suptitle {
+    font-size: 1rem;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+}
+
+.lead {
+    font-size: 1.8rem;
+}
+
+p,
+li,
+a,
+button,
+textarea,
+span {
+    font-size: 1.5rem;
+}
+
+.paragraph {
+    text-align: justify;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}

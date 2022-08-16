@@ -1,0 +1,114 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    top: 96px;
+    min-height: 650px;
+    width: 100%;
+    background: linear-gradient(rgba($blue-saturate, 0.7), rgba($blue-saturate, 0.7)), url("../../img/hero.png");
+    background-repeat: repeat, no-repeat;
+    background-size: 600%;
+    background-position: right -820px bottom -40px;
+    color: $white;
+    @include container;
+
+    @include ipad {
+        background-size: 320%;
+        background-position: right -980px bottom -150px;
+    }
+
+    @include ipadPro {
+        background-position: right -1300px bottom -200px;
+    }
+
+    @include laptop13 {
+        background-size: 170%;
+        background-position: right -780px bottom -130px;
+    }
+
+    &::after {
+        @include pseudo;
+        width: 235px;
+        height: 65px;
+        background-repeat: no-repeat;
+        background-image: url("../../img/three-dots.png");
+        right: -35px;
+        bottom: 55px;
+        display: none;
+
+        @include ipad {
+            display: block;
+        }
+
+        @include laptop13 {
+            bottom: 165px;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        @include ipad {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        @include laptop13 {
+            margin: 0;
+            text-align: left;
+            align-items: flex-start;
+            max-width: 50%;
+        }
+    }
+
+    .paragraph {
+        max-width: 85%;
+        position: relative;
+
+        @include laptop13 {
+            margin-left: 120px;
+        }
+    }
+
+    .arrows-container {
+        &::before {
+            @include pseudo;
+            height: 15px;
+            width: 200px;
+            background-color: $yellow;
+            top: 50%;
+            right: calc(100% + 60px);
+            transform-origin: right;
+            display: none;
+
+            @include laptop13 {
+                display: block;
+            }
+        }
+        &::after {
+            @include pseudo;
+            width: 450px;
+            height: 140px;
+            background-image: url("../../img/arrow-yellow.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+
+            @include ipad {
+                display: block;
+                left: -330px;
+                top: 160px;
+            }
+
+            @include laptop13 {
+                top: 50%;
+                left: calc(100% + 60px);
+                transform-origin: top;
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
