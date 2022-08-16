@@ -1,0 +1,71 @@
+.block-2-columns {
+    @include container;
+    overflow-x: hidden;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @include laptop13 {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+
+    &__image {
+        display: grid;
+        place-items: center;
+        position: relative;
+
+        img,
+        &::before {
+            aspect-ratio: 1;
+            width: 445px;
+            max-width: 100%;
+            border-radius: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::before {
+            @include pseudo;
+            background-color: $grey-light;
+            left: calc(-100% - 50px);
+            right: unset;
+        }
+
+        &::after {
+            @include pseudo;
+            width: 450px;
+            height: 140px;
+            background-image: url("../../img/arrow-yellow-to-right.svg");
+        }
+    }
+
+    &__content {
+        width: 445px;
+        max-width: 100%;
+        margin-top: 50px;
+        @include laptop13 {
+            margin-top: 0;
+        }
+    }
+
+    &--reverse {
+        @include laptop13 {
+            .wrapper {
+                flex-direction: row-reverse;
+            }
+        }
+        .block-2-columns__image {
+            &::before {
+                left: unset;
+                right: calc(-100% - 50px);
+            }
+            &::after {
+                background-image: url("../../img/arrow-yellow-to-left.svg");
+            }
+        }
+    }
+}

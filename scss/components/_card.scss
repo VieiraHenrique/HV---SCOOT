@@ -1,0 +1,50 @@
+.card {
+    * {
+        text-align: center;
+        @include laptop13 {
+            text-align: left;
+        }
+    }
+
+    max-width: 100%;
+
+    &__picto {
+        width: 97px;
+        margin: 0 auto 30px;
+
+        @include ipad {
+            margin: 0 0 30px;
+        }
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-family: $font-primary;
+        font-weight: bold;
+        color: $blue-dark;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        font-family: $font-secondary;
+        font-weight: normal;
+        color: $grey;
+    }
+
+    &--big-title {
+        .card__title {
+            font-size: 3.5rem;
+            @include laptop13 {
+                font-size: 4.5rem;
+            }
+        }
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+        @include laptop13 {
+        }
+    }
+}

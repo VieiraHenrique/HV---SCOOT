@@ -1,0 +1,36 @@
+.features {
+    .block-2-columns__image ::after {
+        @include pseudo;
+        width: 450px;
+        height: 140px;
+    }
+
+    .block-2-columns {
+        &:nth-child(1) {
+            .block-2-columns__image::after {
+                bottom: 0;
+                left: 30px;
+                @include ipad {
+                    left: unset;
+                    right: -50%;
+                }
+            }
+        }
+        &:nth-child(2) {
+            .block-2-columns__image::after {
+                top: 0;
+                right: 50px;
+                @include ipad {
+                    right: unset;
+                    left: -50%;
+                }
+            }
+        }
+        &:nth-child(3) {
+            .block-2-columns__image::after {
+                top: 0;
+                left: 50%;
+            }
+        }
+    }
+}

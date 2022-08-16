@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     overflow: hidden;
-    top: 96px;
+    margin-top: 96px;
     min-height: 650px;
     width: 100%;
     background: linear-gradient(rgba($blue-saturate, 0.7), rgba($blue-saturate, 0.7)), url("../../img/hero.png");
@@ -31,7 +31,7 @@
         height: 65px;
         background-repeat: no-repeat;
         background-image: url("../../img/three-dots.png");
-        right: -35px;
+        right: -125px;
         bottom: 55px;
         display: none;
 
@@ -41,6 +41,10 @@
 
         @include laptop13 {
             bottom: 165px;
+        }
+
+        @include laptop {
+            right: -35px;
         }
     }
 
@@ -92,7 +96,7 @@
             @include pseudo;
             width: 450px;
             height: 140px;
-            background-image: url("../../img/arrow-yellow.svg");
+            background-image: url("../../img/arrow-yellow-to-right.svg");
             background-size: contain;
             background-repeat: no-repeat;
             display: none;
